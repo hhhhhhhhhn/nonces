@@ -1,7 +1,17 @@
 function pickN<T>(array: T[], n: number): T[] {
-	return array.sort(() => Math.random() - 0.5)
-		.sort(() => Math.random() - 0.5)
+	return shuffleArray(array)
 		.slice(0, n)
+}
+
+function shuffleArray(array: any[]): any[] {
+	let shuffled = [...array]
+    for (var i = shuffled.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+    }
+	return shuffled
 }
 
 function average(array: number[]): number {
@@ -113,9 +123,7 @@ function printBoard(board: Board) {
 }
 
 function randomNumbers(): number[] {
-	return Array(90).fill(0).map((_, i: number) => i)
-		.sort(() => Math.random() - 0.5)
-		.sort(() => Math.random() - 0.5)
+	return shuffleArray(Array(90).fill(0).map((_, i: number) => i))
 }
 
 type Game = {
@@ -150,7 +158,7 @@ function playGame(game: Game): void {
 		return
 	}
 	game.isPlayed = true
-	
+
 	let turn = 1
 	for (let number of game.numbers) {
 		game.boards.forEach(b => boardAddNumber(b, number))
