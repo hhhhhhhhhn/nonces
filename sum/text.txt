@@ -1,0 +1,472 @@
+n=1, k=1: true
+0 entries
+Target: 1
+
+n=1, k=2: false
+0 entries
+Target: 0
+
+n=1, k=3: false
+0 entries
+Target: 0
+
+n=1, k=4: false
+0 entries
+Target: 0
+
+n=1, k=5: false
+0 entries
+Target: 0
+
+n=1, k=6: false
+0 entries
+Target: 0
+
+n=1, k=7: false
+0 entries
+Target: 0
+
+n=1, k=8: false
+0 entries
+Target: 0
+
+n=1, k=9: false
+0 entries
+Target: 0
+
+n=1, k=10: false
+0 entries
+Target: 0
+
+n=2, k=1: true
+0 entries
+Target: 3
+
+n=2, k=2: false
+0 entries
+Target: 1
+
+n=2, k=3: false
+0 entries
+Target: 1
+
+n=2, k=4: false
+0 entries
+Target: 0
+
+n=2, k=5: false
+0 entries
+Target: 0
+
+n=2, k=6: false
+0 entries
+Target: 0
+
+n=2, k=7: false
+0 entries
+Target: 0
+
+n=2, k=8: false
+0 entries
+Target: 0
+
+n=2, k=9: false
+0 entries
+Target: 0
+
+n=2, k=10: false
+0 entries
+Target: 0
+
+n=3, k=1: true
+0 entries
+Target: 6
+
+n=3, k=2: true
+0 entries
+Target: 3
+
+n=3, k=3: false
+0 entries
+Target: 2
+
+n=3, k=4: false
+0 entries
+Target: 1
+
+n=3, k=5: false
+0 entries
+Target: 1
+
+n=3, k=6: false
+0 entries
+Target: 1
+
+n=3, k=7: false
+0 entries
+Target: 0
+
+n=3, k=8: false
+0 entries
+Target: 0
+
+n=3, k=9: false
+0 entries
+Target: 0
+
+n=3, k=10: false
+0 entries
+Target: 0
+
+n=4, k=1: true
+0 entries
+Target: 10
+
+n=4, k=2: true
+0 entries
+Target: 5
+
+n=4, k=3: false
+0 entries
+Target: 3
+
+n=4, k=4: false
+0 entries
+Target: 2
+
+n=4, k=5: false
+0 entries
+Target: 2
+
+n=4, k=6: false
+0 entries
+Target: 1
+
+n=4, k=7: false
+0 entries
+Target: 1
+
+n=4, k=8: false
+0 entries
+Target: 1
+
+n=4, k=9: false
+0 entries
+Target: 1
+
+n=4, k=10: false
+0 entries
+Target: 1
+
+n=5, k=1: true
+0 entries
+Target: 15
+
+n=5, k=2: false
+0 entries
+Target: 7
+
+n=5, k=3: true
+0 entries
+Target: 5
+
+n=5, k=4: false
+0 entries
+Target: 3
+
+n=5, k=5: false
+0 entries
+Target: 3
+
+n=5, k=6: false
+0 entries
+Target: 2
+
+n=5, k=7: false
+0 entries
+Target: 2
+
+n=5, k=8: false
+0 entries
+Target: 1
+
+n=5, k=9: false
+0 entries
+Target: 1
+
+n=5, k=10: false
+0 entries
+Target: 1
+
+n=6, k=1: true
+0 entries
+Target: 21
+
+n=6, k=2: false
+0 entries
+Target: 10
+
+n=6, k=3: true
+0 entries
+Target: 7
+
+n=6, k=4: false
+0 entries
+Target: 5
+
+n=6, k=5: false
+0 entries
+Target: 4
+
+n=6, k=6: false
+0 entries
+Target: 3
+
+n=6, k=7: false
+0 entries
+Target: 3
+
+n=6, k=8: false
+0 entries
+Target: 2
+
+n=6, k=9: false
+0 entries
+Target: 2
+
+n=6, k=10: false
+0 entries
+Target: 2
+
+n=7, k=1: true
+0 entries
+Target: 28
+
+n=7, k=2: true
+0 entries
+Target: 14
+
+n=7, k=3: false
+0 entries
+Target: 9
+
+n=7, k=4: true
+0 entries
+Target: 7
+
+n=7, k=5: false
+0 entries
+Target: 5
+
+n=7, k=6: false
+0 entries
+Target: 4
+
+n=7, k=7: false
+0 entries
+Target: 4
+
+n=7, k=8: false
+0 entries
+Target: 3
+
+n=7, k=9: false
+0 entries
+Target: 3
+
+n=7, k=10: false
+0 entries
+Target: 2
+
+n=8, k=1: true
+0 entries
+Target: 36
+
+n=8, k=2: true
+0 entries
+Target: 18
+
+n=8, k=3: true
+0 entries
+Target: 12
+
+n=8, k=4: true
+0 entries
+Target: 9
+
+n=8, k=5: false
+0 entries
+Target: 7
+
+n=8, k=6: false
+0 entries
+Target: 6
+
+n=8, k=7: false
+0 entries
+Target: 5
+
+n=8, k=8: false
+0 entries
+Target: 4
+
+n=8, k=9: false
+0 entries
+Target: 4
+
+n=8, k=10: false
+0 entries
+Target: 3
+
+n=9, k=1: true
+0 entries
+Target: 45
+
+n=9, k=2: false
+0 entries
+Target: 22
+
+n=9, k=3: true
+0 entries
+Target: 15
+
+n=9, k=4: false
+0 entries
+Target: 11
+
+n=9, k=5: true
+0 entries
+Target: 9
+
+n=9, k=6: false
+0 entries
+Target: 7
+
+n=9, k=7: false
+0 entries
+Target: 6
+
+n=9, k=8: false
+0 entries
+Target: 5
+
+n=9, k=9: false
+0 entries
+Target: 5
+
+n=9, k=10: false
+0 entries
+Target: 4
+
+n=10, k=1: true
+0 entries
+Target: 55
+
+n=10, k=2: false
+0 entries
+Target: 27
+
+n=10, k=3: false
+0 entries
+Target: 18
+
+n=10, k=4: false
+0 entries
+Target: 13
+
+n=10, k=5: true
+0 entries
+Target: 11
+
+n=10, k=6: false
+0 entries
+Target: 9
+
+n=10, k=7: false
+0 entries
+Target: 7
+
+n=10, k=8: false
+0 entries
+Target: 6
+
+n=10, k=9: false
+0 entries
+Target: 6
+
+n=10, k=10: false
+0 entries
+Target: 5
+
+Unexpected: 0
+[]
+15 6 <- Uneven 4 1 (of 20)
+20 6 <- Even 14 3 (of 35)
+Repeat 27 6
+Repeat 32 6
+Repeat 39 6
+Repeat 44 6
+Repeat 51 6
+Repeat 56 6
+Repeat 63 6
+Repeat 68 6
+Repeat 75 6
+Repeat 80 6
+Repeat 87 6
+Repeat 92 6
+Repeat 99 6
+Repeat 104 6
+Repeat 111 6
+Repeat 116 6
+24 10 <- Uneven 5 1 (of 30)
+35 10 <- Even 27 6 (of 63)
+Repeat 44 10
+Repeat 55 10
+Repeat 64 10
+Repeat 75 10
+Repeat 84 10
+Repeat 95 10
+Repeat 104 10
+Repeat 115 10
+32 12 <- Uneven 11 2 (of 44)
+39 12 <- Even 25 5 (of 65)
+Repeat 56 12
+Repeat 63 12
+Repeat 80 12
+Repeat 87 12
+Repeat 104 12
+Repeat 111 12
+35 14 <- Even 9 1 (of 45)
+48 14 <- Uneven 35 8 (of 84)
+Repeat 63 14
+Repeat 76 14
+Repeat 91 14
+Repeat 104 14
+Repeat 119 14
+35 15 <- Uneven 6 1 (of 42)
+39 15 <- Uneven 12 2 (of 52)
+50 15 <- Even 34 7 (of 85)
+54 15 <- Even 44 10 (of 99)
+Repeat 65 15
+Repeat 69 15
+Repeat 80 15
+Repeat 84 15
+Repeat 95 15
+Repeat 99 15
+Repeat 110 15
+Repeat 114 15
+44 18 <- Even 10 1 (of 55)
+63 18 <- Uneven 48 11 (of 112)
+Repeat 80 18
+Repeat 99 18
+Repeat 116 18
+55 20 <- Even 21 3 (of 77)
+64 20 <- Uneven 39 8 (of 104)
+Repeat 95 20
+Repeat 104 20
+48 21 <- Uneven 7 1 (of 56)
+56 21 <- Uneven 19 3 (of 76)
+69 21 <- Even 45 9 (of 115)
+77 21 <- Even 65 15 (of 143)
+Repeat 90 21
+Repeat 98 21
