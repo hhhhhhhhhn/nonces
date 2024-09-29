@@ -286,6 +286,63 @@ func chainImageMain() {
 	f.Close()
 }
 
+func chainLengthImageMain() {
+	image := image.NewRGBA64(image.Rect(0, 0, CHAIN_SIZE/2, CHAIN_SIZE))
+
+	for r := 0; r < CHAIN_SIZE; r++ {
+		for c := 0; c < CHAIN_SIZE/2; c++ {
+			k := c+1
+			n := r+1
+
+			if (!possible(n, k)) {
+				image.Set(c, r, color.RGBA{0, 0, 0, 255})
+			} else {
+				length := chain(n, k)
+				if length == 1 {
+					image.Set(c, r, color.RGBA{100, 0, 0, 255})
+				} else if length == 2 {
+					image.Set(c, r, color.RGBA{255, 0, 0, 255})
+				} else if length == 3 {
+					image.Set(c, r, color.RGBA{255, 100, 0, 255})
+				} else if length == 4{
+					image.Set(c, r, color.RGBA{255, 255, 100, 255})
+				} else if length == 5 {
+					image.Set(c, r, color.RGBA{255, 255, 255, 255})
+				} else {
+					image.Set(c, r, color.RGBA{255, 0, 255, 255})
+				}
+			}
+
+		}
+	}
+
+	f, _ := os.Create("chainlength.png")
+	png.Encode(f, image)
+	f.Close()
+}
+
+func chain(n int, k int) int {
+	if (!possible(n, k)) {
+		fmt.Println("CHAIN IMPOSSIBLE")
+		os.Exit(1)
+	}
+	if (n == 2*k || n == 2*k-1) {
+		return 1
+	}
+	if (n >= 4*k-1) {
+		return 0 + chain(n-2*k, k)
+	}
+	t := n*(n+1)/2/k
+	if t % 2 == 0 {
+		newN := (n-2*k)*(n+1)/2/k
+		newK := 2*(k - (n - newN + 1)/2) + 1
+		return 1 + chain(newN, newK)
+	} else {
+		newN := (n-2*k)*(n+1)/2/k
+		newK := k - (n - newN)/2
+		return 1 + chain(newN, newK)
+	}
+}
 const MAX_K = 10
 func imageMain() {
 	image := image.NewRGBA64(image.Rect(0, 0, MAX_K, MAX_K))
@@ -338,6 +395,7 @@ func imageMain() {
 
 func main() {
 	chainImageMain()
+	chainLengthImageMain()
 	// fmt.Println(unevenFixable(15, 6))
 	//fmt.Println(hasUnevenSimpleSolution(15, 9))
 	// imageMain()

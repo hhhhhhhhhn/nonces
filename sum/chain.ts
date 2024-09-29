@@ -32,14 +32,14 @@ function chain(n: number, k: number) {
 		else if (n > 2*k) {
 			let t = target(n, k)
 			if (t % 2 == 0) {
-				let newN = (n-2*k)*(n+1)/2/k
-				let newK = 2*(k - (n - newN + 1)/2) + 1
+				let newN = t - (n+1)
+				let newK = 2*k - 2*n + t - 1
 				n = newN
 				k = newK
 				console.log("AMPLIFICACION EMPAREJADA")
 			} else {
-				let newN = (n-2*k)*(n+1)/2/k
-				let newK = k - (n - newN)/2
+				let newN = t - (n+1)
+				let newK = k - n + (t+1)/2 - 1
 				n = newN
 				k = newK
 				console.log("AMPLIFICACIÓN DIRECTA")
@@ -52,11 +52,11 @@ function chain(n: number, k: number) {
 }
 
 function main() {
-	for (let n = 0; n < 100; n++){
-		for (let k = 0; k < 4*n; k++){
-			if (possible(n, k)) chain(n, k)
-		}
-	}
-	//chain(2024, 690)
+//	for (let n = 0; n < 100; n++){
+//		for (let k = 0; k < 4*n; k++){
+//			if (possible(n, k)) chain(n, k)
+//		}
+//	}
+	chain(2024, 690)
 }
 main()
