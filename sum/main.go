@@ -334,12 +334,12 @@ func chain(n int, k int) int {
 	}
 	t := n*(n+1)/2/k
 	if t % 2 == 0 {
-		newN := (n-2*k)*(n+1)/2/k
-		newK := 2*(k - (n - newN + 1)/2) + 1
+		newN := t - (n+1)
+		newK := 2*k - 2*n + t - 1
 		return 1 + chain(newN, newK)
 	} else {
-		newN := (n-2*k)*(n+1)/2/k
-		newK := k - (n - newN)/2
+		newN := t - (n+1)
+		newK := k - n + (t+1)/2 - 1
 		return 1 + chain(newN, newK)
 	}
 }
@@ -394,14 +394,14 @@ func imageMain() {
 }
 
 func main() {
-	chainImageMain()
-	chainLengthImageMain()
+	//chainImageMain()
+	//chainLengthImageMain()
 	// fmt.Println(unevenFixable(15, 6))
 	//fmt.Println(hasUnevenSimpleSolution(15, 9))
 	// imageMain()
-	// n := 98
-	// k := 33
-	//showSols(n, k, 1)
+	n := 2024
+	k := 690
+	showSols(n, k, 1)
 	//_, unevenN := hasUnevenSimpleSolution(n, k)
 	//newK := k - ((n - unevenN)-1)/2
 	//showUnevenSols(unevenN, newK, n*(n+1)/2/k, 1)
